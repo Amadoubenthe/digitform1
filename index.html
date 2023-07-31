@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="js/main.js" defer></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Les formulaires</h1>
+		<form>
+			<!-- Champ nom avec text-->
+			<div>
+				<label for="name">Nom</label>
+				<input type="text" name="name" id="name" value="Amadou" />
+			</div>
+
+			<!-- Champ conditions avec checkbox -->
+			<label for="coding">J'accepte</label>
+			<input type="checkbox" id="conditions" name="conditions" checked />
+
+			<!-- Champ avec boutton radio -->
+			<fieldset>
+				<legend>
+					Veuillez sélectionner votre méthode de contact préférée:
+				</legend>
+				<div>
+					<div>
+						<input
+							type="radio"
+							id="contactChoice1"
+							name="contact"
+							value="email"
+						/>
+						<label for="contactChoice1">Email</label>
+					</div>
+
+					<div>
+						<input
+							type="radio"
+							id="contactChoice2"
+							name="contact"
+							value="phone"
+							checked
+						/>
+						<label for="contactChoice2">Phone</label>
+					</div>
+
+					<input type="radio" id="contactChoice3" name="contact" value="mail" />
+					<label for="contactChoice3">Mail</label>
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>
