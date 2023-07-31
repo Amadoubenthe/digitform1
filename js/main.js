@@ -1,17 +1,8 @@
-// Recuper le nom
+const form = document.querySelector('form');
 
-const nameElement = document.getElementById('name');
-console.log(nameElement.value);
+form.addEventListener('submit', event => {
+	event.preventDefault();
 
-// Rcuperer un checkbox
-const checkboxElement = document.getElementById('conditions');
-console.log(checkboxElement.checked);
-
-// Recuper les elements radio
-const contacts = document.querySelectorAll('input[type=radio]');
-
-for (let index = 0; index < contacts.length; index++) {
-	if (contacts[index].checked) {
-		console.log(contacts[index].value);
-	}
-}
+	const nameElement = document.getElementById('name');
+	console.log(nameElement.value);
+});
